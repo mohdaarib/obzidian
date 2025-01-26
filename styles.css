@@ -7,7 +7,6 @@ body, html {
 /* Global styles */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
 }
 
 /* Navbar styles */
@@ -173,7 +172,7 @@ body {
 
 .auth_section .auth_content p {
   margin: 0 0 1rem;
-  font-size: 1rem;
+  font-size: 1.6rem;
   color: #666;
 }
 
@@ -225,7 +224,7 @@ body {
   }
 
   .hero_section h1 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 
   .hero_section h4 {
@@ -255,7 +254,7 @@ body {
   }
 
   .hero_section h1 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 
   .hero_section h4 {
