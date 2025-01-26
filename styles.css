@@ -3,6 +3,7 @@
 /*=========================================*/
 body, html {
   overflow-x: hidden; /* Prevents horizontal scrolling */
+
 }
 /* Global styles */
 body {
@@ -160,7 +161,9 @@ body {
 }
 
 .story_section .story_content p {
+  font-family: Inter, sans-serif;
   margin-bottom: 1rem;
+  color: #212529ec;
 }
 
 /* Author section */
