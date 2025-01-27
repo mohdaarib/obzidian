@@ -3,23 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Responsive Heading</title>
   <style>
-    body{
-      background-color: black;
+    .headline {
+      font-size: 3rem; /* Adjust for desktop */
+      text-align: center;
+    }
+
+    /* Mobile-specific styles */
+    @media (max-width: 768px) {
+      .headline {
+        font-size: 2rem; /* Adjust font size for mobile */
+        line-height: 1.5;
+      }
+      .headline span {
+        display: block; /* Force line breaks */
+      }
     }
   </style>
 </head>
 <body>
-  <header style="background: url('/images/header\ background\ image.jpg'); backdrop-filter: blur(100px); color: white;">
-    <h1>Your Heading</h1>
-    <p>Some subtitle text</p>
-  </header>
-  
-  <section style="background: rgba(255, 255, 255, 0.5); backdrop-filter: blur(100px);">
-    <h2>Next Section</h2>
-    <p>Content below</p>
-  </section>
-  
+  <h1 class="headline">
+    <span>HOW THIS FAT</span>
+    <span>SANTA CLAUS-TYPE GUY</span>
+    <span>BECOME THE WORLD'S</span>
+    <span>GREATEST COUNTY CLUB OWNER???</span>
+  </h1>
 </body>
 </html>
