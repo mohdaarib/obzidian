@@ -56,8 +56,11 @@ body {
   line-height: 54px;
   position: relative;
   padding: 0px 20% 0px 20%;
+}
 
-
+.hero_section h1 span {
+  display: inline;
+  /* Default for desktop */
 }
 
 .hero_section h4 {
@@ -243,7 +246,7 @@ body {
 @media screen and (max-width: 768px) {
   .hero_section {
     padding: 2rem 1rem;
-    background-size:cover;
+    background-size: cover;
   }
 
   .hero_section h1 {
@@ -251,6 +254,13 @@ body {
     line-height: 1.6;
     padding: 0;
     margin-top: -6%;
+  }
+
+  .hero_section h1 span {
+    display: inline-block;
+    /* Stack spans on mobile */
+    width: 100%;
+    /* Force spans to take up full width */
   }
 
   .hero_section h4 {
@@ -295,6 +305,13 @@ body {
     line-height: 1.2;
     padding: 0;
     margin-top: -6%;
+  }
+
+  .hero_section h1 span {
+    display: inline-block;
+    /* Stack spans on mobile */
+    width: 100%;
+    /* Force spans to take up full width */
   }
 
   .hero_section h4 {
@@ -352,4 +369,24 @@ body {
 
 .dollar {
   color: #85BB65;
+}
+
+h1 {
+  font-size: 24px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+h1 span {
+  display: inline;
+  /* Default for desktop */
+}
+
+@media (max-width: 768px) {
+  h1 span {
+    display: inline-block;
+    /* Stack spans on mobile */
+    width: 100%;
+    /* Force spans to take up full width */
+  }
 }
