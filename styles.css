@@ -187,21 +187,8 @@ body {
 }
 
 /*========================= Author Section =========================*/
-.auth_section {
-  padding: 2rem;
-}
 
-.auth_section .auth_content p {
-  margin: 0 0 1rem;
-  font-size: 1.6rem;
-  color: #666;
-}
-
-.auth_section .author_name p {
-  margin: 0;
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #333;
+.author_name{
   text-align: right;
   padding-top: 2%;
 }
@@ -253,10 +240,6 @@ body {
   .story_section .story_content p {
     font-size: 1.4rem;
   }
-
-  .auth_section {
-    padding: 1.5rem 1rem;
-  }
 }
 
 /* Mobile (768px) */
@@ -304,10 +287,6 @@ body {
   .story_section .story_content p {
     font-size: 1.4rem;
   }
-
-  .auth_section {
-    padding: 1.5rem 1rem;
-  }
 }
 
 /* Mobile Small (479px) */
@@ -354,10 +333,6 @@ body {
 
   .story_section .story_content p {
     font-size: 1.4rem;
-  }
-
-  .auth_section {
-    padding: 1.5rem 1rem;
   }
 }
 
