@@ -169,7 +169,7 @@ body {
 }
 
 .story_section .chap_head h2 {
-  font-size: 3rem;
+  font-size: 2rem;
   margin: 0;
   color: #212529;
   font-family: Oswald, sans-serif;
@@ -190,7 +190,6 @@ body {
 
 /*========================= Author Section =========================*/
 .auth_section {
-  background-color: #f9f9f9;
   padding: 2rem;
   text-align: center;
 }
@@ -371,7 +370,6 @@ body {
   font-weight: 500;
   font-style: italic;
   color: #111317f1;
-  text-align: center;
 }
 
 .dollar {
