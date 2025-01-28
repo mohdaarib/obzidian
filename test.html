@@ -5,29 +5,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Responsive Heading</title>
   <style>
-    .headline {
-      font-size: 3rem; /* Adjust for desktop */
-      text-align: center;
-    }
+/* Default Desktop Version */
+.headline {
+  font-size: 4.9rem;
+  line-height: 1.2;
+  text-align: center;
+}
 
-    /* Mobile-specific styles */
-    @media (max-width: 768px) {
-      .headline {
-        font-size: 2rem; /* Adjust font size for mobile */
-        line-height: 1.5;
-      }
-      .headline span {
-        display: block; /* Force line breaks */
-      }
-    }
+.headline span {
+  display: inline-block; /* Inline-block allows the spans to stay on the same line in the desktop version */
+  margin-right: 10px; /* Optional: Space between the span elements */
+}
+
+/* Mobile Version */
+@media screen and (max-width: 768px) {
+  .headline {
+    font-size: 1.4rem; /* Adjust the font size for mobile */
+    line-height: 1.6;
+    text-align: left; /* Align text to the left on mobile */
+  }
+
+  .headline span {
+    display: block; /* Each span will now be displayed as a block (on separate lines) */
+    margin-bottom: 10px; /* Space between the lines */
+  }
+}
+
   </style>
 </head>
 <body>
-  <h1 class="headline">
+  <h1 class="headline desktop">
+    How this fat Santa Claus-type guy <span>become the world’s greatest</span> <span>country club owner???</span>
+  </h1>
+  
+  <h1 class="headline mobile" style="text-align: center;">
     <span>HOW THIS FAT</span>
     <span>SANTA CLAUS-TYPE GUY</span>
     <span>BECOME THE WORLD'S</span>
-    <span>GREATEST COUNTY CLUB OWNER???</span>
+    <span>GREATEST COUNTRY CLUB OWNER???</span>
   </h1>
+<script>
+  // Function to adjust the display based on window size
+function adjustHeadlineLayout() {
+  const mobileHeadline = document.querySelector('.headline.mobile');
+  const desktopHeadline = document.querySelector('.headline.desktop');
+
+  // Check if the screen width is less than or equal to 768px (mobile)
+  if (window.innerWidth <= 768) {
+    // Show mobile version, hide desktop version
+    mobileHeadline.style.display = 'block';
+    desktopHeadline.style.display = 'none';
+  } else {
+    // Show desktop version, hide mobile version
+    mobileHeadline.style.display = 'none';
+    desktopHeadline.style.display = 'block';
+  }
+}
+
+// Run the function on page load and on window resize
+window.addEventListener('load', adjustHeadlineLayout);
+window.addEventListener('resize', adjustHeadlineLayout);
+
+</script>  
 </body>
 </html>
