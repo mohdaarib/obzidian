@@ -205,6 +205,11 @@ body {
 .story_section .chapter-2 p{
   padding-bottom: 1rem;
 }
+
+.story_section .chapter-3 .chap_head{
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
 /*========================= Author Section =========================*/
 
 .author_name {
@@ -257,19 +262,22 @@ body {
   }
 
   .story_section .story_content {
-    margin-bottom: 14%;
+    margin-bottom: 1%;
   }
 
   .story_section .story_content p {
     font-size: 1.4rem;
   }
 
+  .story_section .chapter-2{
+    padding-bottom: 10%;
+  }
   .story_section .chapter-2 .chap_head{
-    padding-top: 1rem;
+    padding-top: 2rem;
   }
 
   .story_section .chapter-2 p{
-    padding: 0 1rem 1rem 1rem;
+    padding: 0 1rem 0 1rem;
   }
 }
 
@@ -316,7 +324,11 @@ body {
   }
 
   .story_section .story_content {
-    margin-bottom: 14%;
+    margin-bottom: 1%;
+  }
+
+  .story_section .chapter-2{
+    padding-bottom: 10%;
   }
 
   .story_section .story_content p {
@@ -324,11 +336,11 @@ body {
   }
 
   .story_section .chapter-2 .chap_head{
-    padding-top: 1rem;
+    padding-top: 2rem;
   }
 
   .story_section .chapter-2 p{
-    padding: 0 1rem 1rem 1rem;
+    padding: 0 1rem 0 1rem;
   }
 }
 
@@ -375,7 +387,11 @@ body {
   }
 
   .story_section .story_content {
-    margin-bottom: 14%;
+    margin-bottom: 1%;
+  }
+
+  .story_section .chapter-2{
+    padding-bottom: 10%;
   }
 
   .story_section .story_content p {
@@ -383,11 +399,11 @@ body {
   }
 
   .story_section .chapter-2 .chap_head{
-    padding-top: 1rem;
+    padding-top: 2rem;
   }
 
   .story_section .chapter-2 p{
-    padding: 0 1rem 1rem 1rem;
+    padding: 0 1rem 0 1rem;
   }
 }
 
@@ -569,7 +585,7 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  font-size: 1.5rem; /* Larger bold font size */
+  font-size: 18px;/* Larger bold font size */
   font-weight: bold; /* Make text bold */
   padding: 15px 30px;
   border: none;
@@ -618,11 +634,11 @@ body {
 /* Breakpoint: Up to 991px (Tablets in landscape mode) */
 @media (max-width: 991px) {
   .cta-button_spt {
-    width: 75%;
+    width: 80%;
     /* Different width */
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     /* Slightly smaller font */
-    padding: 14px 20px;
+    padding: 10px 50px 10px 50px;
     /* Adjusted padding */
     border-radius: 8px;
     /* Different border radius */
@@ -632,9 +648,9 @@ body {
 /* Breakpoint: Up to 768px (Tablets in portrait mode) */
 @media (max-width: 768px) {
   .cta-button_spt {
-    width: 75%;
-    font-size: 1rem;
-    padding: 12px 18px;
+    width: 80%;
+    font-size: 1.2rem;
+    padding: 10px 50px 10px 50px;
     border-radius: 8px;
   }
 }
@@ -642,9 +658,10 @@ body {
 /* Breakpoint: Up to 479px (Mobile phones) */
 @media (max-width: 479px) {
   .cta-button_spt {
-    width: 75%;
-    font-size: 1rem;
-    padding: 10px 12px;
+    width: 80%;
+    height: 100%;
+    font-size: 1.2rem;
+    padding: 10px 50px 10px 50px;
     border-radius: 8px;
   }
 }
