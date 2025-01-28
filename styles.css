@@ -32,6 +32,7 @@ body {
   text-align: center;
   padding: 4rem 2rem;
   background-color: #000000;
+  background-image: url(./images/header\ background\ image.png);
   color: #ffffff;
   position: relative;
 
@@ -187,7 +188,7 @@ body {
 
 /*========================= Author Section =========================*/
 
-.author_name{
+.author_name {
   text-align: right;
   padding-top: 2%;
 }
@@ -418,59 +419,180 @@ body {
 
 .cta-button {
   display: inline-block;
-  font-size: 18px; /* Default font size */
-  padding: 15px 30px; /* Default padding */
-  border: none; /* Remove default border */
-  border-radius: 6px; /* Rounded corners */
-  background: linear-gradient(to bottom, #e33a0d, #c12615); /* Linear gradient */
-  color: #fff; /* White text */
-  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 18px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
   font-weight: bold;
-  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
-  text-transform: capitalize; /* Style text */
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
-  margin-bottom: 6%; /* Space below the button */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-transform: capitalize;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 6%;
   font-family: Inter, sans-serif;
-  width:40%; /* Default width for larger screens */
-  max-width: 90%; /* Prevent the button from exceeding viewport width */
-  text-align: center; /* Center text within the button */
+  width: 40%;
+  max-width: 90%;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background-color: #ff4800;
+}
+
+.cta-button::before {
+  content: '';
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  width: 200%;
+  height: 200%;
+  background: none;
+  /* Remove the gradient effect */
+}
+
+.cta-button:hover::before,
+.cta-button.active-shine::before {
+  top: 0;
+  left: 0;
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0.767), rgba(255, 255, 255, 0));
+  transition: top 0.5s, left 0.5s;
+  transform: rotate(-45deg);
 }
 
 .cta-button:hover {
-  background-color: #ff4800; /* Slightly darker shade on hover */
-  transform: scale(1.05); /* Slight zoom effect */
-  box-shadow: 0 0 5px rgba(255, 72, 0, 0.8); /* Outer glow effect */
+  background-color: #ff4800;
+  transform: scale(1.05);
+  box-shadow: 0 0 5px rgba(255, 72, 0, 0.8);
 }
+
+
 
 /* Breakpoint: Up to 991px (Tablets in landscape mode) */
 @media (max-width: 991px) {
   .cta-button {
-    width: 80%; /* Slightly smaller button */
-    font-size: 1.2rem; /* Reduce font size slightly */
-    padding: 14px 25px; /* Adjust padding */
+    width: 80%;
+    /* Slightly smaller button */
+    font-size: 1.2rem;
+    /* Reduce font size slightly */
+    padding: 14px 25px;
+    /* Adjust padding */
     border-radius: 6px;
-    margin-bottom: 16%; /* Space below the button */
+    margin-bottom: 16%;
+    /* Space below the button */
   }
 }
 
 /* Breakpoint: Up to 768px (Tablets in portrait mode) */
 @media (max-width: 768px) {
   .cta-button {
-    width: 80%; /* Scale width to 80% of the viewport */
-    font-size: 1.2rem; /* Reduce font size further */
-    padding: 12px 20px; /* Adjust padding */
+    width: 80%;
+    /* Scale width to 80% of the viewport */
+    font-size: 1.2rem;
+    /* Reduce font size further */
+    padding: 12px 20px;
+    /* Adjust padding */
     border-radius: 6px;
-    margin-bottom: 16%; /* Space below the button */
+    margin-bottom: 16%;
+    /* Space below the button */
   }
 }
 
 /* Breakpoint: Up to 479px (Mobile phones) */
 @media (max-width: 479px) {
   .cta-button {
-    width: 80%; /* Full width for small screens */
-    font-size: 1.2rem; /* Smaller font size */
-    padding: 10px 15px; /* Reduce padding */
+    width: 80%;
+    /* Full width for small screens */
+    font-size: 1.2rem;
+    /* Smaller font size */
+    padding: 10px 15px;
+    /* Reduce padding */
     border-radius: 6px;
-    margin-bottom: 16%; /* Space below the button */
+    margin-bottom: 16%;
+    /* Space below the button */
+  }
+}
+
+.cta-button_spt {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 18px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-transform: capitalize;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  font-family: Inter, sans-serif;
+  width: 40%;
+  max-width: 90%;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background-color: #ff4800;
+}
+
+.cta-button_spt::before {
+  content: '';
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  width: 200%;
+  height: 200%;
+  background: none;
+  /* Remove the gradient effect */
+}
+
+.cta-button_spt:hover::before,
+.cta-button_spt.active-shine::before {
+  top: 0;
+  left: 0;
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0.767), rgba(255, 255, 255, 0));
+  transition: top 0.5s, left 0.5s;
+  transform: rotate(-45deg);
+}
+
+.cta-button_spt:hover {
+  background-color: #ff4800;
+  transform: scale(1.05);
+  box-shadow: 0 0 5px rgba(255, 72, 0, 0.8);
+}
+
+/* Responsive styles for .cta-button_spt */
+
+/* Breakpoint: Up to 991px (Tablets in landscape mode) */
+@media (max-width: 991px) {
+  .cta-button_spt {
+    width: 75%;
+    /* Different width */
+    font-size: 1.1rem;
+    /* Slightly smaller font */
+    padding: 14px 20px;
+    /* Adjusted padding */
+    border-radius: 8px;
+    /* Different border radius */
+  }
+}
+
+/* Breakpoint: Up to 768px (Tablets in portrait mode) */
+@media (max-width: 768px) {
+  .cta-button_spt {
+    width: 75%;
+    font-size: 1rem;
+    padding: 12px 18px;
+    border-radius: 8px;
+  }
+}
+
+/* Breakpoint: Up to 479px (Mobile phones) */
+@media (max-width: 479px) {
+  .cta-button_spt {
+    width: 75%;
+    font-size: 1rem;
+    padding: 10px 12px;
+    border-radius: 8px;
   }
 }

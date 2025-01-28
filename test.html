@@ -3,69 +3,90 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Heading</title>
+  <title>Button with Mirror Shine Effect</title>
   <style>
-/* Default Desktop Version */
-.headline {
-  font-size: 4.9rem;
-  line-height: 1.2;
-  text-align: center;
-}
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
 
-.headline span {
-  display: inline-block; /* Inline-block allows the spans to stay on the same line in the desktop version */
-  margin-right: 10px; /* Optional: Space between the span elements */
-}
+    .cta-button {
+      display: inline-block;
+      font-size: 18px; 
+      padding: 15px 30px;
+      border: none;
+      border-radius: 6px;
+      color: #fff;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      text-transform: capitalize;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      margin-bottom: 6%;
+      font-family: Inter, sans-serif;
+      width: 40%;
+      max-width: 90%;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      background-color: #3498db; /* Default button color */
+    }
 
-/* Mobile Version */
-@media screen and (max-width: 768px) {
-  .headline {
-    font-size: 1.4rem; /* Adjust the font size for mobile */
-    line-height: 1.6;
-    text-align: left; /* Align text to the left on mobile */
-  }
+    .cta-button::before {
+      content: '';
+      position: absolute;
+      top: -100%;
+      left: -100%;
+      width: 200%;
+      height: 200%;
+      
+    }
 
-  .headline span {
-    display: block; /* Each span will now be displayed as a block (on separate lines) */
-    margin-bottom: 10px; /* Space between the lines */
-  }
-}
+    .cta-button:hover::before,
+    .cta-button.active-shine::before {
+      top: 0;
+      left: 0;
+      background: rgba(255, 255, 255, 0.7); /* White shine effect without fog */
+      transition: top 0.4s, left 0.4s, transform 0.4s;
+      transform: rotate(-45deg); /* Shine effect with rotation */
+    }
+
+    .cta-button:hover {
+      background-color: #ff4800; /* Slightly darker shade on hover */
+      transform: scale(1.05); /* Slight zoom effect */
+      box-shadow: 0 0 5px rgba(255, 72, 0, 0.8); /* Outer glow effect */
+    }
 
   </style>
 </head>
 <body>
-  <h1 class="headline desktop">
-    How this fat Santa Claus-type guy <span>become the world’s greatest</span> <span>country club owner???</span>
-  </h1>
-  
-  <h1 class="headline mobile" style="text-align: center;">
-    <span>HOW THIS FAT</span>
-    <span>SANTA CLAUS-TYPE GUY</span>
-    <span>BECOME THE WORLD'S</span>
-    <span>GREATEST COUNTRY CLUB OWNER???</span>
-  </h1>
-<script>
-  // Function to adjust the display based on window size
-function adjustHeadlineLayout() {
-  const mobileHeadline = document.querySelector('.headline.mobile');
-  const desktopHeadline = document.querySelector('.headline.desktop');
+  <button class="cta-button">Click Me</button>
 
-  // Check if the screen width is less than or equal to 768px (mobile)
-  if (window.innerWidth <= 768) {
-    // Show mobile version, hide desktop version
-    mobileHeadline.style.display = 'block';
-    desktopHeadline.style.display = 'none';
-  } else {
-    // Show desktop version, hide mobile version
-    mobileHeadline.style.display = 'none';
-    desktopHeadline.style.display = 'block';
-  }
-}
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const ctaButton = document.querySelector('.cta-button');
 
-// Run the function on page load and on window resize
-window.addEventListener('load', adjustHeadlineLayout);
-window.addEventListener('resize', adjustHeadlineLayout);
+      // Trigger shine effect on hover
+      ctaButton.addEventListener('mouseenter', () => {
+        ctaButton.classList.add('hovered');
+      });
 
-</script>  
+      ctaButton.addEventListener('mouseleave', () => {
+        ctaButton.classList.remove('hovered');
+      });
+
+      // Automatically trigger shine every 4 seconds
+      setInterval(() => {
+        ctaButton.classList.add('active-shine');
+        setTimeout(() => {
+          ctaButton.classList.remove('active-shine');
+        }, 400); // Remove the class after 400ms (duration of the shine effect)
+      }, 4000); // Repeat every 4 seconds
+    });
+  </script>
 </body>
 </html>
