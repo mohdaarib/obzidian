@@ -440,11 +440,7 @@ body {
 .cta-button:hover {
   background-color: #ff4800; /* Slightly darker shade on hover */
   transform: scale(1.05); /* Slight zoom effect */
-}
-
-.cta-button:active {
-  background-color: #c0392b; /* Even darker shade on click */
-  transform: scale(0.98); /* Slight shrink effect */
+  box-shadow: 0 0 5px rgba(255, 72, 0, 0.8); /* Outer glow effect */
 }
 
 /* Breakpoint: Up to 991px (Tablets in landscape mode) */
