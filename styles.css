@@ -216,8 +216,8 @@ body {
 }
 
 .story_section .chapter-3 .chap_head {
-  margin-top: 10%;
-  margin-bottom: 10%;
+  margin-top: 4%;
+  margin-bottom: 2%;
 }
 
 /*========================= Author Section =========================*/
@@ -291,6 +291,9 @@ body {
   .story_section .chapter-2 p {
     padding: 0 1rem 0 1rem;
   }
+  .story_section .chapter-3 .chap_head {
+    margin-top: 8%;
+  }
 }
 
 /* Mobile (768px) */
@@ -355,6 +358,10 @@ body {
   .story_section .chapter-2 p {
     padding: 0 1rem 0 1rem;
   }
+
+  .story_section .chapter-3 .chap_head {
+    margin-top: 8%;
+  }
 }
 
 /* Mobile Small (479px) */
@@ -418,6 +425,10 @@ body {
 
   .story_section .chapter-2 p {
     padding: 0 1rem 0 1rem;
+  }
+
+  .story_section .chapter-3 .chap_head {
+    margin-top: 8%;
   }
 }
 
