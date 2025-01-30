@@ -236,7 +236,7 @@ body {
 
 .story_section .chapter-2 .chap_head,
 .story_section .chapter-3 .chap_head {
-  padding-top: 1.5rem;
+  padding-top: 4rem;
 }
 
 .story_section .chapter-2 p,
@@ -248,6 +248,10 @@ body {
   display: grid;
   grid-template-rows: auto;
   gap: 0;
+}
+
+.story_section .chapter-5 .bottom_alert{
+  text-align: center;
 }
 
 
@@ -318,7 +322,7 @@ body {
   
   .story_section .chapter-2 .chap_head,
   .story_section .chapter-3 .chap_head {
-    padding-top: 2rem;
+    padding-top: 3rem;
   }
   
   .story_section .chapter-2 p,
@@ -390,7 +394,7 @@ body {
   
   .story_section .chapter-2 .chap_head,
   .story_section .chapter-3 .chap_head {
-    padding-top: 2rem;
+    padding-top: 3rem;
   }
   
   .story_section .chapter-2 p,
@@ -461,7 +465,7 @@ body {
   
   .story_section .chapter-2 .chap_head,
   .story_section .chapter-3 .chap_head {
-    padding-top: 2rem;
+    padding-top: 3rem;
   }
   
   .story_section .chapter-2 p,
@@ -730,3 +734,5 @@ body {
     border-radius: 8px;
   }
 }
+
+
