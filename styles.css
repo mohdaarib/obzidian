@@ -232,6 +232,7 @@ body {
   /* Center the element */
   margin-right: calc(-50vw + 50%);
   /* Counteract the padding on both sides */
+  padding-bottom: 4%;
 }
 
 .story_section .chapter-2 .chap_head,
@@ -250,7 +251,7 @@ body {
   gap: 0;
 }
 
-.story_section .chapter-5 .bottom_alert {
+.bottom_alert {
   text-align: center;
   font-size: medium;
 }
