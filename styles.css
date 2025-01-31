@@ -69,6 +69,8 @@ body {
   /* Center the image horizontally */
   object-fit: cover;
   /* Maintains aspect ratio and fills the defined width/height */
+  max-width: 50%;
+  margin-top: -3%;
 }
 
 
@@ -252,8 +254,9 @@ body {
 }
 
 .bottom_alert {
+  margin-top: 4%;
   text-align: center;
-  font-size: medium;
+  font-size: 1rem !important;
 }
 
 
@@ -291,8 +294,8 @@ body {
   }
 
   .hurry-up-image {
-    max-width: 250px;
-    /* Smaller max width for tablets */
+    max-width: 80%;
+    margin-top: -2%;
   }
 
   .hero_section h5 {
@@ -332,6 +335,11 @@ body {
     padding: 0 1rem;
   }
 
+  .bottom_alert {
+    margin-top: 4%;
+    text-align: center;
+    font-size: 1.2rem !important;
+  }
 }
 
 /* Mobile (768px) */
@@ -354,8 +362,8 @@ body {
   }
 
   .hurry-up-image {
-    max-width: 250px;
-    /* Smaller max width for tablets */
+    max-width: 80%;
+    margin-top: -2%;
   }
 
   .story_section h4 {
@@ -402,6 +410,12 @@ body {
   .story_section .chapter-2 p,
   .story_section .chapter-3 p {
     padding: 0 1rem;
+  }
+
+  .bottom_alert {
+    margin-top: 4%;
+    text-align: center;
+    font-size: 1.2rem !important;
   }
 }
 
@@ -425,8 +439,8 @@ body {
   }
 
   .hurry-up-image {
-    max-width: 90%;
-    /* Smaller max width for tablets */
+    max-width: 80%;
+    margin-top: -2%;
   }
 
   .story_section h4 {
@@ -473,6 +487,12 @@ body {
   .story_section .chapter-2 p,
   .story_section .chapter-3 p {
     padding: 0 1rem;
+  }
+
+  .bottom_alert {
+    margin-top: 8%;
+    text-align: center;
+    font-size: 1.2rem !important;
   }
 
 }
