@@ -40,3 +40,30 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 400); // Remove the class after 400ms (duration of the shine effect)
   }, 4000); // Repeat every 4 seconds
 });
+
+
+//FAQ'S
+
+document.addEventListener('DOMContentLoaded', function () {
+  const questions = document.querySelectorAll('.question');
+
+  questions.forEach((question, index) => {
+    const line = question.nextElementSibling.nextElementSibling; // Line element for each question
+    const answer = question.nextElementSibling; // Answer for each question
+
+    question.addEventListener('click', () => {
+      const isActive = question.classList.contains('active');
+      question.classList.toggle('active');
+      if (isActive) {
+        answer.style.maxHeight = null;
+        answer.classList.remove('active');
+        line.style.bottom = '-2px'; // Move the line back to the bottom of the question
+      } else {
+        answer.style.maxHeight = answer.scrollHeight + 'px';
+        answer.classList.add('active');
+        line.style.bottom = answer.offsetHeight + 10 + 'px'; // Move the line to the bottom of the answer
+      }
+    });
+  });
+});
+
