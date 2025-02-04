@@ -1,151 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQ Section</title>
-    <style>
-        body {
-            background-color: black;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            color: white;
-            margin: 0;
-            flex-direction: column;
-            gap: 20px;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fog Effect Example</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-        #faq-header {
-            text-align: center;
-            width: 100%;
-        }
+/* Navbar Style */
+.navbar {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  position: relative; /* Ensure it stays above the fog effect */
+  z-index: 2; /* Keep navbar above fog effect */
+}
 
-        #faq-header h1 {
-            font-size: 30px;
-            margin: 0;
-        }
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
 
-        #faq-header p {
-            font-size: 18px;
-            margin: 5px 0;
-        }
+.navbar ul li {
+  display: inline;
+}
 
-        #faq {
-            border: 1px solid white;
-            border-radius: 30px;
-            padding: 20px;
-            position: relative;
-            width: 500px;
-            background: rgba(0, 0, 0, 0.8);
-        }
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
 
-        .question {
-            padding: 15px 20px;
-            text-align: left;
-            position: relative;
-            cursor: pointer;
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            font-size: 18px;
-            margin-bottom: 0;
-        }
+/* Fog Effect */
+.overlay-fade-bottom {
+  height: 180px;
+  width: 100vw;
+  position: absolute;
+  top: 100%; /* Starts right after the navbar */
+  left: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.85) 70%, rgba(0, 0, 0, 1) 85%);
+  padding: 0;
+  z-index: 1; /* Ensure it appears below the navbar */
+}
 
-        .question .toggle-icon {
-            font-size: 20px;
-            margin-left: 10px;
-            transition: transform 0.3s ease;
-        }
+/* Next Section Style */
+.next-section {
+  padding: 40px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
 
-        .question.active .toggle-icon {
-            transform: rotate(45deg);
-        }
+.next-section h1 {
+  font-size: 36px;
+  color: #333;
+}
 
-        .answer {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.4s ease-out;
-            padding: 0 20px;
-            margin-bottom: 0;
-            text-align: left;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-        }
+.next-section p {
+  font-size: 18px;
+  color: #666;
+}
 
-        .answer.active {
-            max-height: 500px;
-            transition: max-height 0.4s ease-in;
-        }
-
-        /* Line below each question */
-        .line {
-            width: 100%;
-            height: 2px;
-            background-color: white;
-            opacity: 0.3;
-            transition: bottom 0.3s ease;
-        }
-    </style>
+  </style>
 </head>
 <body>
 
-    <!-- FAQ Header Section -->
-    <div id="faq-header">
-        <h1>Frequently Asked Questions</h1>
-        <p>Get your questions answered</p>
-    </div>
+  <!-- Navbar Section -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
 
-    <!-- FAQ Section -->
-    <div id="faq">
-        <!-- Question 1 -->
-        <div class="question">What is your return policy? <span class="toggle-icon">+</span></div>
-        <div class="answer">
-            <div class="line"></div>
-            <div>Our return policy allows returns within 30 days of purchase with a valid receipt.</div>
-        </div>
+  <!-- Fog Effect Section -->
+  <div class="overlay-fade-bottom"></div>
 
-        <!-- Question 2 -->
-        <div class="question">How long does shipping take? <span class="toggle-icon">+</span></div>
-        <div class="answer">
-            <div class="line"></div>
-            <div>Shipping typically takes 5-7 business days depending on your location.</div>
-        </div>
-
-        <!-- Question 3 -->
-        <div class="question">Do you offer international shipping? <span class="toggle-icon">+</span></div>
-        <div class="answer">
-            <div class="line"></div>
-            <div>Yes, we offer international shipping to selected countries.</div>
-        </div>
-
-        <!-- Question 4 -->
-        <div class="question">How can I track my order? <span class="toggle-icon">+</span></div>
-        <div class="answer">
-            <div class="line"></div>
-            <div>You can track your order using the tracking link provided in your confirmation email.</div>
-        </div>
-    </div>
-
-    <script>
-        const questions = document.querySelectorAll('.question');
-
-        questions.forEach((question) => {
-            const answer = question.nextElementSibling; // Get the answer div
-
-            question.addEventListener('click', () => {
-                const isActive = question.classList.contains('active');
-                question.classList.toggle('active');
-                if (isActive) {
-                    answer.classList.remove('active');
-                } else {
-                    answer.classList.add('active');
-                }
-            });
-        });
-    </script>
+  <!-- Next Section -->
+  <section class="next-section">
+    <h1>Welcome to the Next Section</h1>
+    <p>This is the section that follows the fog effect.</p>
+  </section>
 
 </body>
 </html>
