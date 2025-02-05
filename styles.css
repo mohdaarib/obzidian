@@ -80,6 +80,7 @@ body {
   line-height: 1;
   position: relative;
   padding: 0 5% 0 5%;
+  text-transform: uppercase;
 }
 
 .hero_section h4 {
@@ -655,6 +656,7 @@ body {
     line-height: 1.6 !important;
     padding: 0;
 
+
   }
 
   .hero_section h4 {
@@ -891,7 +893,7 @@ body {
   font-family: Inter, sans-serif;
   font-size: 1rem;
   line-height: 1.6;
-  font-weight: 500;
+  font-weight: 300;
 }
 
 .question.active {
