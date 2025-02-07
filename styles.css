@@ -1,6 +1,3 @@
-/*========================= Fonts =========================*/
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
-
 /*========================= Global Styles =========================*/
 body,
 html {
@@ -233,22 +230,6 @@ body {
 /*========================= Content Text Styles =========================*/
 .highlight {
   font-weight: bolder;
-  color: #111317f1;
-}
-
-.content_itali {
-  font-weight: 500;
-  font-style: italic;
-  background-color: yellow;
-}
-
-.with_background {
-  background-color: yellow;
-}
-
-.txt_center {
-  font-weight: 500;
-  font-style: italic;
   color: #111317f1;
 }
 
@@ -1045,48 +1026,32 @@ body {
 
 
 
-
 /* Footer Section */
 .footer {
-  background-color: #000;
-  /* Adjust as needed */
+  background-color:#080808;
   color: #fff;
   text-align: center;
   padding: 20px 0;
 }
 
-.footer .footer-links {
-  margin-bottom: 10px;
-}
-
 .footer .footer-links a {
   color: #fff;
   text-decoration: none;
-  margin: 0 10px;
-}
-
-.footer .footer-links a:hover {
-  text-decoration: underline;
+  font-size: 20px;
 }
 
 .footer .social-icons {
-  margin: 10px 0;
+  margin-top: 15px;
 }
 
 .footer .social-icons a {
+  color: #fff;
+  font-size: 24px;
   display: inline-block;
   margin: 0 10px;
-  font-size: 20px;
-  /* Adjust size */
-  color: #fff;
+  transition: color 0.3s ease;
 }
 
 .footer .social-icons a:hover {
   color: #FFD700;
-  /* Example: Change color on hover */
-}
-
-.footer .copyright {
-  font-size: 14px;
-  margin-top: 10px;
 }

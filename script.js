@@ -1,3 +1,5 @@
+//---------------Button Mirror Shine Effect---------------//
+
 document.addEventListener('DOMContentLoaded', () => {
   const ctaButton = document.querySelector('.cta-button');
 
@@ -42,7 +44,9 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-//FAQ'S
+
+
+//---------------FAQ'S---------------//
 
 document.addEventListener('DOMContentLoaded', function () {
   const questions = document.querySelectorAll('.question');
