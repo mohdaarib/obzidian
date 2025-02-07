@@ -1,94 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fog Effect Example</title>
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    /* General Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <script src="./script.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
-/* Navbar Style */
-.navbar {
-  background-color: #333;
-  color: white;
-  padding: 20px;
-  position: relative; /* Ensure it stays above the fog effect */
-  z-index: 2; /* Keep navbar above fog effect */
-}
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-.navbar ul {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-around;
-}
-
-.navbar ul li {
-  display: inline;
-}
-
-.navbar ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-}
-
-/* Fog Effect */
-.overlay-fade-bottom {
-  height: 180px;
-  width: 100vw;
-  position: absolute;
-  top: 100%; /* Starts right after the navbar */
-  left: 0;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.85) 70%, rgba(0, 0, 0, 1) 85%);
-  padding: 0;
-  z-index: 1; /* Ensure it appears below the navbar */
-}
-
-/* Next Section Style */
-.next-section {
-  padding: 40px;
-  background-color: #f4f4f4;
-  text-align: center;
-}
-
-.next-section h1 {
-  font-size: 36px;
-  color: #333;
-}
-
-.next-section p {
-  font-size: 18px;
-  color: #666;
-}
-
-  </style>
 </head>
+
 <body>
+  <!-- Header section -->
+  <header>
+    <!-- Navigation bar -->
+    <nav class="navbar">
+      <!-- Logo as an image -->
+      <div class="logo">
+        <!-- Remove the index.html and just link to the root directory ("/") -->
+        <a href="/"><img src="./images/Obzidian Logo.png" alt="Logo" /></a>
+      </div>
+    </nav>
+    <!-- Navigation bar End-->
 
-  <!-- Navbar Section -->
-  <nav class="navbar">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </nav>
+    <div class="break-line">
+      <div class="section-51 thin-section obzidian"></div>
+    </div>
 
-  <!-- Fog Effect Section -->
-  <div class="overlay-fade-bottom"></div>
+<!-- Calendly inline widget begin -->
+<div class="calendly-inline-widget" data-url="https://calendly.com/harishpr546/harish" style="min-width:320px;height:700px;"></div>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Calendly inline widget end -->
 
-  <!-- Next Section -->
-  <section class="next-section">
-    <h1>Welcome to the Next Section</h1>
-    <p>This is the section that follows the fog effect.</p>
-  </section>
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="#">follow me on:</a>
+    </div>
+
+    <div class="social-icons">
+      <a href="https://www.facebook.com/profile.php?id=61571848384019" target="_blank"><i class="bi bi-facebook"></i></a>
+      <a href="https://www.instagram.com/obzidian.in/" target="_blank"><i class="bi bi-instagram"></i></a>
+    </div>
+  </footer>
 
 </body>
+
 </html>
