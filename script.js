@@ -71,3 +71,33 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+
+//---------------Buuton Action For Go To Contact Page---------------//
+
+document.addEventListener('DOMContentLoaded', () => {
+  const buttons = document.querySelectorAll('.cta-button, .cta-button_spt');
+
+  buttons.forEach(button => {
+    // Trigger shine effect on hover
+    button.addEventListener('mouseenter', () => {
+      button.classList.add('hovered');
+    });
+
+    button.addEventListener('mouseleave', () => {
+      button.classList.remove('hovered');
+    });
+
+    // Automatically trigger shine every 4 seconds
+    setInterval(() => {
+      button.classList.add('active-shine');
+      setTimeout(() => {
+        button.classList.remove('active-shine');
+      }, 400);
+    }, 4000);
+
+    // Add click event to navigate to contact.html
+    button.addEventListener('click', () => {
+      window.location.href = 'contact.html';
+    });
+  });
+});

@@ -567,6 +567,51 @@ body {
   margin-top: 15%;
 }
 
+
+/*========================= Footer Section  =========================*/
+
+.footer {
+  background-color: #080808;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer .footer-links a {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.2rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  margin: 0 10px;
+}
+
+.footer .social-icons {
+  margin-top: 15px;
+}
+
+/* Combined social icons styles */
+.footer .social-icons a {
+  color: #fff;
+  /* Default icon color */
+  font-size: 24px;
+  display: inline-block;
+  margin: 0 10px;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect with gradient text */
+.footer .social-icons a:hover {
+  background: linear-gradient(0deg, rgba(90, 12, 3, 1) 0%, rgba(255, 72, 0, 1) 100%);
+  -webkit-background-clip: text;
+  /* For Safari/Chrome */
+  -webkit-text-fill-color: transparent;
+  /* For Safari/Chrome */
+  background-clip: text;
+  /* Standard property */
+}
+
+
 /*========================= Responsive Styles =========================*/
 
 /* Tablet and Above (991px) */
@@ -698,6 +743,20 @@ body {
     font-size: 1.3rem;
     padding: 10px 50px 10px 50px;
     border-radius: 8px;
+  }
+
+  .footer {
+    padding: 30px 0;
+  }
+
+  .footer .footer-links a {
+    font-size: 1.1rem;
+    margin: 0 8px;
+  }
+
+  .footer .social-icons a {
+    font-size: 22px;
+    margin: 0 8px;
   }
 }
 
@@ -833,6 +892,20 @@ body {
     padding: 10px 50px 10px 50px;
     border-radius: 8px;
   }
+
+  .footer {
+    padding: 30px 0;
+  }
+
+  .footer .footer-links a {
+    font-size: 1rem;
+    margin: 0 6px;
+  }
+
+  .footer .social-icons a {
+    font-size: 20px;
+    margin: 0 6px;
+  }
 }
 
 /* Mobile Small (479px) */
@@ -967,6 +1040,25 @@ body {
     border-radius: 8px;
     margin-top: 15%;
   }
+
+  .footer {
+    padding: 30px 0;
+  }
+
+  .footer .footer-links a {
+    display: block;
+    font-size: 0.9rem;
+    margin: 5px 0;
+  }
+
+  .footer .social-icons {
+    margin-top: 10px;
+  }
+
+  .footer .social-icons a {
+    font-size: 18px;
+    margin: 0 5px;
+  }
 }
 
 
@@ -1020,131 +1112,3 @@ body {
 }
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!<---> ⚠️ Importat Style End ⚠️ <----->!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-
-
-
-
-
-/* Footer Section */
-.footer {
-  background-color: #080808;
-  color: #fff;
-  text-align: center;
-  padding: 40px 0;
-}
-
-.footer .footer-links a {
-  font-family: Inter, sans-serif;
-  font-size: 1.2rem;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.footer .social-icons {
-  margin-top: 15px;
-}
-
-.footer .social-icons a {
-  color: #fff;
-  font-size: 24px;
-  display: inline-block;
-  margin: 0 10px;
-  transition: color 0.3s ease;
-}
-
-.footer .social-icons a:hover {
-  color: #FFD700;
-}
-
-
-
-/* Footer Section */
-.footer {
-  background-color: #080808;
-  color: #fff;
-  text-align: center;
-  padding: 20px 0;
-}
-
-.footer .footer-links a {
-  font-family: 'Inter', sans-serif;
-  font-size: 1.2rem;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 500;
-  margin: 0 10px;
-}
-
-.footer .social-icons {
-  margin-top: 15px;
-}
-
-.footer .social-icons a {
-  color: #fff;
-  font-size: 24px;
-  display: inline-block;
-  margin: 0 10px;
-  transition: color 0.3s ease;
-}
-
-.footer .social-icons a:hover {
-  color: #FFD700;
-}
-
-/* Media Query: For screens 991px and below */
-@media screen and (max-width: 991px) {
-  .footer {
-    padding: 30px 0;
-  }
-
-  .footer .footer-links a {
-    font-size: 1.1rem;
-    margin: 0 8px;
-  }
-
-  .footer .social-icons a {
-    font-size: 22px;
-    margin: 0 8px;
-  }
-}
-
-/* Media Query: For screens 768px and below */
-@media screen and (max-width: 768px) {
-  .footer {
-    padding: 30px 0;
-  }
-
-  .footer .footer-links a {
-    font-size: 1rem;
-    margin: 0 6px;
-  }
-
-  .footer .social-icons a {
-    font-size: 20px;
-    margin: 0 6px;
-  }
-}
-
-/* Media Query: For screens 479px and below */
-@media screen and (max-width: 479px) {
-  .footer {
-    padding: 30px 0;
-  }
-
-  /* Stack footer links vertically on very small screens */
-  .footer .footer-links a {
-    display: block;
-    font-size: 0.9rem;
-    margin: 5px 0;
-  }
-
-  .footer .social-icons {
-    margin-top: 10px;
-  }
-
-  .footer .social-icons a {
-    font-size: 18px;
-    margin: 0 5px;
-  }
-}
