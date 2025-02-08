@@ -1,0 +1,1150 @@
+/*========================= Global Styles =========================*/
+body,
+html {
+  overflow-x: hidden;
+  /* Prevents horizontal scrolling */
+}
+
+body {
+  margin: 0;
+  margin-bottom: auto;
+}
+
+
+/*========================= Navbar Styles =========================*/
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  color: #fff;
+
+}
+
+.navbar .logo img {
+  height: 40px;
+  width: auto;
+  padding: 6% 0 6% 0;
+}
+
+
+/*========================= Hero Section =========================*/
+.hero_section {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: #000000;
+  background-image: url(./images/header\ background\ image.png);
+  color: #ffffff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  /* This adds space between all elements */
+  padding: 0 5% 0 5%;
+  text-align: center;
+
+}
+
+.hero_section h5,
+.hero_section h1,
+.hero_section h4,
+.hero_section .cta-button {
+  margin: 0;
+  /* Remove default margins for consistency */
+}
+
+.hero_section h5 {
+  letter-spacing: 1px;
+  font-family: Inter, sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  background: linear-gradient(0deg, rgba(90, 12, 3, 1) 0%, rgba(255, 72, 0, 1) 100%);
+  -webkit-background-clip: text;
+  /* Chrome, Safari */
+  background-clip: text;
+  /* For Firefox */
+  color: transparent;
+  margin-top: 4%;
+}
+
+.hero_section h1 {
+  z-index: 12;
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: .7px;
+  font-family: Oswald, sans-serif;
+  font-size: 4.3rem;
+  line-height: 1;
+  position: relative;
+  padding: 0 5% 0 5%;
+}
+
+.hero_section h4 {
+  z-index: 12;
+  color: #ffffff;
+  text-align: center;
+  font-family: Inter, sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.6;
+  position: relative;
+  padding: 0 20% 0 20%;
+  font-weight: 400;
+}
+
+
+/*========================= Overlay Fade Effects =========================*/
+.overlay-fade-bottom-top {
+  height: 80px;
+  width: 100vh;
+  position: absolute;
+  top: 0;
+  background-image: linear-gradient(180deg, rgb(0, 0, 0) 15%, rgba(0, 0, 0, 0.85) 30%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0) 100%);
+}
+
+.overlay-fade-bottom {
+  height: 180px;
+  width: 100vw;
+  /* Ensures it takes up the full viewport width */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  /* Explicitly setting left to 0 to remove any potential gaps */
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.85) 70%, rgba(0, 0, 0, 1) 85%);
+  padding: 0;
+}
+
+.overlay-fade-bottom-2 {
+  z-index: 1;
+  background-image: linear-gradient(to top, #000000, #0000008f 26%, #00000000 63%);
+  height: 150px;
+  position: absolute;
+  inset: auto 0% 0%;
+  box-shadow: 0 0 0px rgb(0, 0, 0);
+}
+
+.overlay-fade-bottom-2.top {
+  z-index: 999;
+  box-shadow: none;
+  background-image: linear-gradient(#000000bd, #0000008f 16%, #00000000 33%);
+  width: 110%;
+  inset: 0% 0% auto;
+}
+
+/*========================= Fog Effect =========================*/
+.fog-effect {
+  height: 90px;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(14, 14, 14, 1) 23%, rgba(186, 186, 186, 1) 66%, rgba(255, 255, 255, 1) 100%);
+}
+
+/*========================= Break Line =========================*/
+.break-line {
+  justify-content: center;
+  display: flex;
+  background-color: #000000;
+}
+
+/*========================= Section 51 (Style For Break Line)=========================*/
+.section-51 {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 5vw;
+  display: flex;
+  position: relative;
+}
+
+.section-51.thin-section {
+  background-image: radial-gradient(circle, #deec0a, #ffbf00 33%, #006bff00);
+  width: 90%;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 1px;
+  padding-bottom: 0;
+}
+
+.section-51.thin-section.obzidian {
+  background-image: radial-gradient(circle, #ff4800, #ff4800 33%, #006bff00);
+  width: 100%;
+}
+
+.gradient-line {
+  opacity: .8;
+  background-image: linear-gradient(to right, #0000, #b31a18 25%, #b7bbc5 50%, #b31a18 70%, #0000);
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+}
+
+/*========================= Story Section =========================*/
+
+.story_section .chapter-1 .story_content h4 {
+  line-height: 2;
+  z-index: 12;
+  color: #212529ec;
+  font-family: Inter, sans-serif;
+  margin-bottom: 0;
+  font-size: 1.2rem;
+}
+
+.story_section .chapter-1 .story_content h4 span {
+  display: block;
+}
+
+.story_section {
+  background-color: #fff;
+  color: #212529;
+  margin-top: 20px;
+  font-family: Inter, sans-serif;
+  font-size: 26px;
+}
+
+.story_section .chap_head {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.story_section .chap_head h2 {
+  font-size: 2rem;
+  margin: 0;
+  color: #212529;
+  font-family: Inter, sans-serif;
+}
+
+.story_section .story_content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+  line-height: 1.6;
+  color: #555;
+}
+
+.story_section .story_content p {
+  font-family: Inter, sans-serif;
+  margin-bottom: 1rem;
+  color: #212529ec;
+}
+
+
+/*========================= Content Text Styles =========================*/
+.highlight {
+  font-weight: bolder;
+  color: #111317f1;
+}
+
+
+/*========================= Story Tone Change (Important)=========================*/
+
+.story_section .chapter-2 .story_content .highlight {
+  text-align: center;
+}
+
+.story_section .chapter-2 {
+  color: white;
+  background-color: #221e1d;
+  width: 100vw;
+  /* Full viewport width */
+  margin-left: calc(-50vw + 50%);
+  /* Center the element */
+  margin-right: calc(-50vw + 50%);
+  /* Counteract the padding on both sides */
+}
+
+/*Font Color Change For Black Baground*/
+.story_section .chapter-2 h1,
+.story_section .chapter-2 h2,
+.story_section .chapter-2 h3,
+.story_section .chapter-2 h4,
+.story_section .chapter-2 h5,
+.story_section .chapter-2 h6,
+.story_section .chapter-2 p,
+.story_section .chapter-2 span {
+  color: white !important;
+}
+
+/* Full-screen width background for .chapter-2 */
+.story_section .chapter-3 {
+  background-color: #fff5f3;
+  width: 100vw;
+  /* Full viewport width */
+  margin-left: calc(-50vw + 50%);
+  /* Center the element */
+  margin-right: calc(-50vw + 50%);
+  /* Counteract the padding on both sides */
+}
+
+.story_section .chapter-2 .chap_head,
+.story_section .chapter-3 .chap_head {
+  padding-top: 6rem;
+}
+
+.story_section .chapter-2 p,
+.story_section .chapter-3 p {
+  padding-bottom: 1rem;
+}
+
+.story_section {
+  display: grid;
+  grid-template-rows: auto;
+  gap: 0;
+}
+
+.bottom_alert {
+  text-align: center;
+  font-size: 1.2rem !important;
+}
+
+.story_section .chapter-1,
+.story_section .chapter-2,
+.story_section .chapter-3 {
+  padding-bottom: 6rem;
+}
+
+/*========================= Author Section =========================*/
+
+.author_name {
+  font-weight: bold;
+  text-align: right;
+  padding-top: 2%;
+}
+
+
+/*============ FAQ'S =============*/
+.faq-section {
+  background-color: #080808;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin: 0;
+  perspective: 1000px;
+  width: 100vw;
+  /* Full viewport width */
+  margin-left: calc(-50vw + 50%);
+  /* Center the element */
+  margin-right: calc(-50vw + 50%);
+
+}
+
+.faq-heading {
+  text-align: center;
+  margin-top: 6rem;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.faq-heading h2 {
+  font-size: 2rem;
+  font-family: Inter, sans-serif;
+  margin: 0;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.faq-heading p {
+  letter-spacing: 1px;
+  font-family: Inter, sans-serif;
+  font-size: 26px;
+  font-weight: bold;
+  background: linear-gradient(0deg, rgba(90, 12, 3, 1) 0%, rgba(255, 72, 0, 1) 100%);
+  -webkit-background-clip: text;
+  /* Chrome, Safari */
+  background-clip: text;
+  /* For Firefox */
+  color: transparent;
+}
+
+#faq {
+  border: 0.1px solid rgba(255, 255, 255, 0.479);
+  border-radius: 30px;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  width: 50%;
+  background: #080808;
+  margin-bottom: 4%;
+}
+
+.question {
+  padding: 15px 20px;
+  text-align: left;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Inter, sans-serif;
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  font-weight: 600;
+}
+
+.question .toggle-icon {
+  font-size: 2rem;
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+}
+
+.question.active .toggle-icon {
+  transform: rotate(45deg);
+}
+
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out, transform 0.4s ease-out;
+  padding: 0 10px;
+  margin-bottom: 15px;
+  text-align: left;
+  position: relative;
+  transform: scale(0);
+  opacity: 0;
+  font-family: Inter, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+.question.active {
+  margin-bottom: 0;
+  /* Removes margin when active */
+}
+
+.answer.active {
+  max-height: 500px;
+  transition: max-height 0.2s ease-in, transform 0.2s ease-in, opacity 0.4s ease-in;
+  transform: scale(1);
+  opacity: 1;
+  margin-bottom: 50px;
+}
+
+.line {
+  position: relative;
+  left: 50%;
+  width: 90%;
+  height: 1px;
+  background-color: white;
+  opacity: 0.3;
+  transition: bottom 0.3s ease;
+  bottom: -2px;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+
+#faq_overlay {
+  position: absolute;
+  top: -150px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 270px;
+  width: 100%;
+  background: radial-gradient(circle, rgba(255, 72, 0, 0.671) 0%, rgb(255, 72, 0, 0.507) 100%, rgba(0, 0, 0, 0) 100%);
+  border-radius: 50%;
+  z-index: 0;
+  box-shadow: 0 0 3.75rem 1.875rem rgba(243, 0, 0, 0.4);
+  filter: blur(50px);
+}
+
+/*============ Header-Button =============*/
+
+.cta-button {
+  display: inline-block;
+  font-size: 1.6rem;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  line-height: 1.3;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  font-family: Inter, sans-serif;
+  width: 40%;
+  max-width: 90%;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(0deg, rgba(90, 12, 3, 1) 0%, rgba(255, 72, 0, 1) 100%);
+  margin-bottom: 6% !important;
+}
+
+.cta-button::before {
+  content: '';
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  width: 200%;
+  height: 200%;
+  background: none;
+}
+
+.cta-button:hover::before,
+.cta-button.active-shine::before {
+  top: 0;
+  left: 0;
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0.767), rgba(255, 255, 255, 0));
+  transition: top 0.5s, left 0.5s;
+  transform: rotate(-45deg);
+}
+
+.cta-button:hover {
+  background-color: #ff4800;
+  transform: scale(1.05);
+  box-shadow: 0 0 5px rgba(255, 72, 0, 0.8);
+}
+
+
+/*============ Spot Booking Button =============*/
+.cta-button_spt {
+  display: block;
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.9rem;
+  /* Larger bold font size */
+  font-weight: bold;
+  /* Make text bold */
+  padding: 15px 30px;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  font-family: Inter, sans-serif;
+  width: 55%;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(0deg, rgba(90, 12, 3, 1) 0%, rgba(255, 72, 0, 1) 100%);
+}
+
+.cta-button_spt::before {
+  content: '';
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  width: 200%;
+  height: 200%;
+  background: none;
+  /* Remove the gradient effect */
+}
+
+.cta-button_spt:hover::before,
+.cta-button_spt.active-shine::before {
+  top: 0;
+  left: 0;
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0.767), rgba(255, 255, 255, 0));
+  transition: top 0.5s, left 0.5s;
+  transform: rotate(-45deg);
+}
+
+.cta-button_spt:hover {
+  background-color: #ff4800;
+  transform: scale(1.05);
+  box-shadow: 0 0 5px rgba(255, 72, 0, 0.8);
+}
+
+.hurry-up-image {
+  display: block;
+  /* Ensures it's treated like a block element */
+  margin: 0 auto;
+  /* Center the image horizontally */
+  object-fit: cover;
+  /* Maintains aspect ratio and fills the defined width/height */
+  max-width: 50%;
+  margin-top: -3%;
+}
+
+.ps {
+  margin-top: 15%;
+}
+
+/*========================= Responsive Styles =========================*/
+
+/* Tablet and Above (991px) */
+@media screen and (max-width: 991px) {
+  .navbar .logo img {
+    padding: 10% 0 10% 0;
+  }
+
+  .hero_section {
+    padding: 1.5rem 0.5rem;
+    background-size: contain;
+  }
+
+  .hero_section h1 {
+    font-size: 2.4rem;
+    line-height: 1.6 !important;
+    padding: 0;
+    margin-top: 4%;
+  }
+
+  .hero_section h4 {
+    padding: 0 2% 0 2%;
+    font-size: 1.1rem;
+    margin-top: 1%;
+    font-weight: 900;
+    line-height: 1.8;
+  }
+
+  .story_section h4 {
+    font-size: 1.4rem;
+    margin: 0 0 10% 0;
+  }
+
+  .hurry-up-image {
+    max-width: 80%;
+    margin-bottom: 10%;
+  }
+
+  .hero_section h5 {
+    font-size: 1rem;
+    margin-top: 5%;
+    margin-bottom: -5%;
+  }
+
+  .story_section {
+    padding: 1rem;
+    padding-bottom: 0 !important;
+
+  }
+
+  .story_section .chap_head h2 {
+    font-size: 1.8rem;
+    line-height: 1;
+  }
+
+  .story_section .story_content {
+    margin-bottom: 1%;
+  }
+
+  .story_section .story_content p {
+    font-size: 1.4rem;
+  }
+
+  .story_section .chapter-1 {
+    padding-bottom: 10%;
+  }
+
+  .story_section .chapter-2,
+  .story_section .chapter-3 {
+    padding: 6% 0 15% 0;
+  }
+
+  .story_section .chapter-2 .chap_head,
+  .story_section .chapter-3 .chap_head {
+    padding-top: 3rem;
+  }
+
+  .story_section .chapter-2 p,
+  .story_section .chapter-3 p {
+    padding: 0 1rem;
+  }
+
+  .bottom_alert {
+    margin-top: 4%;
+    text-align: center;
+    font-size: 1.2rem !important;
+  }
+
+  #faq {
+    width: 80%;
+    padding: 15px;
+    margin-bottom: 6%;
+  }
+
+  .faq-heading {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .faq-heading p {
+    font-size: 2rem;
+  }
+
+  .faq-heading h2 {
+    font-size: 1.8rem;
+    line-height: 1;
+  }
+
+  .question {
+    font-size: 1.4rem;
+    padding: 12px 18px;
+  }
+
+  .answer {
+    font-size: 1.2rem;
+  }
+
+  .cta-button {
+    width: 70%;
+    font-size: 1rem;
+    padding: 10px 0 10px 0;
+    border-radius: 6px;
+    margin-top: 8% !important;
+    margin-bottom: 10%;
+  }
+
+  .cta-button_spt {
+    width: 80%;
+    font-size: 1.3rem;
+    padding: 10px 50px 10px 50px;
+    border-radius: 8px;
+  }
+}
+
+/* Mobile (768px) */
+@media screen and (max-width: 768px) {
+  .navbar .logo img {
+    padding: 10% 0 10% 0;
+  }
+
+  .hero_section {
+    padding: 1.5rem 0.5rem;
+    background-size: contain;
+  }
+
+  .hero_section h1 {
+    font-size: 2.2rem;
+    line-height: 1.6 !important;
+    padding: 0;
+    margin-top: 4%;
+  }
+
+  .hero_section h4 {
+    padding: 0 2% 0 2%;
+    font-size: 1rem;
+    margin-top: 1%;
+    font-weight: 900;
+    line-height: 1.8;
+  }
+
+
+  .hurry-up-image {
+    max-width: 80%;
+    margin-bottom: 10%;
+  }
+
+  .story_section h4 {
+    font-size: 1.4rem;
+    margin: 0 0 10% 0;
+  }
+
+  .hero_section h5 {
+    font-size: 1rem;
+    margin-top: 5%;
+    margin-bottom: -5%;
+  }
+
+  .story_section {
+    padding: 1rem;
+    padding-bottom: 0 !important;
+  }
+
+  .story_section .chap_head h2 {
+    font-size: 1.8rem;
+    line-height: 1;
+  }
+
+  .story_section .story_content {
+    margin-bottom: 1%;
+  }
+
+
+  .story_section .story_content p {
+    font-size: 1.2rem;
+  }
+
+  .story_section .chapter-1 {
+    padding-bottom: 10%;
+  }
+
+  .story_section .chapter-2,
+  .story_section .chapter-3 {
+    padding: 6% 0 15% 0;
+  }
+
+  .story_section .chapter-2 .chap_head,
+  .story_section .chapter-3 .chap_head {
+    padding-top: 3rem;
+  }
+
+  .story_section .chapter-2 p,
+  .story_section .chapter-3 p {
+    padding: 0 1rem;
+  }
+
+  .bottom_alert {
+    margin-top: 4%;
+    text-align: center;
+    font-size: 1.2rem !important;
+  }
+
+  #faq {
+    width: 90%;
+    margin-bottom: 6%;
+  }
+
+  .faq-heading {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .faq-heading p {
+    font-size: 2rem;
+  }
+
+  .faq-heading h2 {
+    font-size: 1.2rem;
+    line-height: 1;
+  }
+
+  .question {
+    font-size: 1.4rem;
+    /* 20px */
+    padding: 10px 15px;
+  }
+
+  .answer {
+    font-size: 1.2rem;
+    /* 20px */
+  }
+
+  .cta-button {
+    width: 70%;
+    font-size: 1rem;
+    padding: 10px 0 10px 0;
+    border-radius: 6px;
+    margin-top: 6% !important;
+    margin-bottom: 10%;
+  }
+
+  .cta-button_spt {
+    width: 70%;
+    font-size: 1.3rem;
+    padding: 10px 50px 10px 50px;
+    border-radius: 8px;
+  }
+}
+
+/* Mobile Small (479px) */
+@media screen and (max-width: 479px) {
+  .navbar .logo img {
+    padding: 10% 0 10% 0;
+  }
+
+  .hero_section {
+    padding: 1.5rem 0.5rem;
+    background-size: contain;
+    gap: 20px;
+  }
+
+  .hero_section h1 {
+    font-size: 2.2rem;
+    line-height: 1.6 !important;
+    padding: 0;
+    margin-top: 4%;
+  }
+
+  .hero_section h4 {
+    padding: 0 2% 0 2%;
+    font-size: 1rem;
+    margin-top: 1%;
+    font-weight: 900;
+    line-height: 1.8;
+  }
+
+  .hurry-up-image {
+    max-width: 80%;
+    margin-bottom: 10%;
+  }
+
+  .story_section h4 {
+    font-size: 1.4rem;
+    margin: 0 0 10% 0;
+  }
+
+  .hero_section h5 {
+    font-size: 1rem;
+    margin-top: 5%;
+    margin-bottom: -5%;
+  }
+
+  .story_section {
+    padding: 1rem;
+    padding-bottom: 0 !important;
+  }
+
+  .story_section .chap_he .story_section .chapter-1,
+  ad h2 {
+    font-size: 1.8rem;
+    line-height: 1;
+  }
+
+  .story_section .story_content {
+    margin-bottom: 1%;
+  }
+
+
+  .story_section .story_content p {
+    font-size: 1.2rem;
+  }
+
+  .story_section .chapter-1 {
+    padding-bottom: 10%;
+  }
+
+  .story_section .chapter-2,
+  .story_section .chapter-3 {
+    padding: 6% 0 15% 0;
+  }
+
+  .story_section .chapter-2 .chap_head,
+  .story_section .chapter-3 .chap_head {
+    padding-top: 3rem;
+  }
+
+  .story_section .chapter-2 p,
+  .story_section .chapter-3 p {
+    padding: 0 1rem;
+  }
+
+  .bottom_alert {
+    text-align: center;
+    font-size: 1.2rem !important;
+  }
+
+  #faq {
+    width: 85%;
+    margin-bottom: 6%;
+  }
+
+  .faq-heading {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .faq-heading p {
+    font-size: 2rem;
+  }
+
+  .question {
+    font-size: 1.2rem;
+    padding: 8px 12px;
+  }
+
+  .faq-heading h2 {
+    font-size: 1.2rem;
+    line-height: 1;
+  }
+
+  .answer {
+    font-size: 1.1rem;
+  }
+
+  .cta-button {
+    width: 70%;
+    font-size: 1rem;
+    padding: 10px 0 10px 0;
+    border-radius: 6px;
+    margin-top: 6% !important;
+    margin-bottom: 10%;
+  }
+
+  .cta-button_spt {
+    width: 70%;
+    height: 100%;
+    font-size: 1.3rem;
+    padding: 20px 10px 20px 10px;
+    border-radius: 8px;
+    margin-top: 15%;
+  }
+}
+
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!<---> ⚠️ Importat Style ⚠️ <----->!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+
+/* Initially hide mobile and desktop headlines */
+.headline.desktop {
+  display: block;
+  /* Display desktop version by default */
+}
+
+.headline.mobile {
+  display: none;
+  /* Hide mobile version by default */
+}
+
+@media screen and (max-width: 768px) {
+  .headline.desktop {
+    display: none;
+    /* Hide desktop version on mobile */
+  }
+
+  .headline.mobile {
+    display: block;
+    /* Show mobile version on mobile */
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .headline.desktop {
+    display: none;
+    /* Hide desktop version on very small screens */
+  }
+
+  .headline.mobile {
+    display: block;
+    /* Show mobile version on very small screens */
+  }
+
+  .hero_section h1 {
+    line-height: 1.4;
+  }
+
+  .hero_section h1 span {
+    display: block;
+    /* Stack the spans on very small screens */
+    width: 100%;
+    /* Force spans to take full width */
+  }
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!<---> ⚠️ Importat Style End ⚠️ <----->!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+
+
+
+
+/* Footer Section */
+.footer {
+  background-color: #080808;
+  color: #fff;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.footer .footer-links a {
+  font-family: Inter, sans-serif;
+  font-size: 1.2rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer .social-icons {
+  margin-top: 15px;
+}
+
+.footer .social-icons a {
+  color: #fff;
+  font-size: 24px;
+  display: inline-block;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+  color: #FFD700;
+}
+
+
+
+/* Footer Section */
+.footer {
+  background-color: #080808;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer .footer-links a {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.2rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  margin: 0 10px;
+}
+
+.footer .social-icons {
+  margin-top: 15px;
+}
+
+.footer .social-icons a {
+  color: #fff;
+  font-size: 24px;
+  display: inline-block;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+  color: #FFD700;
+}
+
+/* Media Query: For screens 991px and below */
+@media screen and (max-width: 991px) {
+  .footer {
+    padding: 30px 0;
+  }
+
+  .footer .footer-links a {
+    font-size: 1.1rem;
+    margin: 0 8px;
+  }
+
+  .footer .social-icons a {
+    font-size: 22px;
+    margin: 0 8px;
+  }
+}
+
+/* Media Query: For screens 768px and below */
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 30px 0;
+  }
+
+  .footer .footer-links a {
+    font-size: 1rem;
+    margin: 0 6px;
+  }
+
+  .footer .social-icons a {
+    font-size: 20px;
+    margin: 0 6px;
+  }
+}
+
+/* Media Query: For screens 479px and below */
+@media screen and (max-width: 479px) {
+  .footer {
+    padding: 30px 0;
+  }
+
+  /* Stack footer links vertically on very small screens */
+  .footer .footer-links a {
+    display: block;
+    font-size: 0.9rem;
+    margin: 5px 0;
+  }
+
+  .footer .social-icons {
+    margin-top: 10px;
+  }
+
+  .footer .social-icons a {
+    font-size: 18px;
+    margin: 0 5px;
+  }
+}
