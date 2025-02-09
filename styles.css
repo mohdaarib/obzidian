@@ -186,7 +186,6 @@ body {
   color: #212529ec;
   font-family: Inter, sans-serif;
   margin-bottom: 0;
-  font-size: 1.2rem;
 }
 
 .story_section .chapter-1 .story_content h4 span {
@@ -645,11 +644,6 @@ body {
     margin: 0 0 10% 0;
   }
 
-  .hurry-up-image {
-    max-width: 80%;
-    margin-bottom: 10%;
-  }
-
   .hero_section h5 {
     font-size: 1rem;
     margin-top: 5%;
@@ -665,6 +659,10 @@ body {
   .story_section .chap_head h2 {
     font-size: 1.8rem;
     line-height: 1;
+  }
+
+  .story_section .chapter-1 .story_content h4 {
+    font-size: 1.2rem;
   }
 
   .story_section .story_content {
@@ -698,6 +696,11 @@ body {
     margin-top: 4%;
     text-align: center;
     font-size: 1.2rem !important;
+  }
+
+  .hurry-up-image {
+    max-width: 80%;
+    margin-bottom: 10%;
   }
 
   #faq {
@@ -786,12 +789,6 @@ body {
     line-height: 1.8;
   }
 
-
-  .hurry-up-image {
-    max-width: 80%;
-    margin-bottom: 10%;
-  }
-
   .story_section h4 {
     font-size: 1.4rem;
     margin: 0 0 10% 0;
@@ -811,6 +808,10 @@ body {
   .story_section .chap_head h2 {
     font-size: 1.8rem;
     line-height: 1;
+  }
+
+  .story_section .chapter-1 .story_content h4 {
+    font-size: 1.2rem;
   }
 
   .story_section .story_content {
@@ -845,6 +846,11 @@ body {
     margin-top: 4%;
     text-align: center;
     font-size: 1.2rem !important;
+  }
+
+  .hurry-up-image {
+    max-width: 80%;
+    margin-bottom: 10%;
   }
 
   #faq {
@@ -935,9 +941,10 @@ body {
     line-height: 1.8;
   }
 
-  .hurry-up-image {
-    max-width: 80%;
-    margin-bottom: 10%;
+
+
+  .story_section .chapter-1 .story_content h4 {
+    font-size: 1.2rem;
   }
 
   .story_section h4 {
@@ -954,12 +961,6 @@ body {
   .story_section {
     padding: 1rem;
     padding-bottom: 0 !important;
-  }
-
-  .story_section .chap_he .story_section .chapter-1,
-  ad h2 {
-    font-size: 1.8rem;
-    line-height: 1;
   }
 
   .story_section .story_content {
@@ -993,6 +994,11 @@ body {
   .bottom_alert {
     text-align: center;
     font-size: 1.2rem !important;
+  }
+
+  .hurry-up-image {
+    max-width: 80%;
+    margin-bottom: 10%;
   }
 
   #faq {
