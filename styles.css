@@ -31,7 +31,6 @@ body {
 /*========================= Hero Section =========================*/
 .hero_section {
   text-align: center;
-  padding: 4rem 2rem;
   background-color: #000000;
   background-image: url(./images/header\ background\ image.png);
   color: #ffffff;
@@ -42,7 +41,6 @@ body {
   gap: 40px;
   /* This adds space between all elements */
   padding: 0 5% 0 5%;
-  text-align: center;
 
 }
 

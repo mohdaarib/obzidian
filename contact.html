@@ -16,10 +16,21 @@
         body {
             margin: 0;
             padding: 0;
-            font-family: 'Inter', sans-serif;
+            font-family: Inter, sans-serif;
             background-image: url(./images/header\ background\ image.png);
-            padding-bottom: 4%;
             background-size: contain;
+        }
+
+        .overlay-fade-bottom-2 {
+            height: 120px !important;
+        }
+
+        .hero_section_cpage {
+            background-color: #000000;
+            background-image: url(./images/header\ background\ image.png);
+            color: #ffffff;
+            position: relative;
+            align-items: center;
         }
 
         .call_book_content {
@@ -34,19 +45,17 @@
             font-size: 2rem;
             margin: 0;
             color: #ffffff;
-            font-family: Inter, sans-serif;
+            margin-top: 4%;
         }
 
         .call_book_content h3 {
             text-align: center;
             font-size: 1.8rem;
-            font-family: Inter, sans-serif;
             color: #ffffffec;
         }
 
         .call_book_content p {
             font-size: 1.4rem;
-            font-family: Inter, sans-serif;
             color: #ffffffec;
         }
 
@@ -62,6 +71,7 @@
             width: 90%;
             max-width: 1100px;
             height: 750px;
+            padding-bottom: 10%;
         }
 
         /* Responsive Styles */
@@ -124,7 +134,6 @@
 </head>
 
 <body>
-    <!-- Navigation Bar -->
     <header>
         <!-- Navigation bar -->
         <nav class="navbar">
@@ -134,23 +143,32 @@
                 <a href="/"><img src="./images/Obzidian Logo.png" alt="Logo" /></a>
             </div>
         </nav>
+        <!-- Navigation bar End-->
+
         <div class="break-line">
             <div class="section-51 thin-section obzidian"></div>
         </div>
+
+        <!-- Hero section -->
+        <div class="hero_section_cpage">
+            <!-- Overlay Effects -->
+            <div class="overlay-fade-bottom-2 top"></div>
+
+            <div class="call_book_content">
+                <h2>Final Step:</h2>
+                <h3>Schedule The Call From Below:</h3>
+                <p>(Your answers will remain completely confidential and are used to prepare a strategy for you prior to
+                    the
+                    call.)</p>
+            </div>
+
+            <!-- Zcal Booking Section -->
+            <div class="booking-container">
+                <iframe src="https://zcal.co/i/Sz2ZoOF3?embed=1&embedType=iframe" loading="lazy"
+                    id="zcal-invite"></iframe>
+            </div>
+        </div>
     </header>
-
-    <div class="call_book_content">
-        <h2>Final Step:</h2>
-        <h3>Schedule The Call From Below:</h3>
-        <p>(Your answers will remain completely confidential and are used to prepare a strategy for you prior to the
-            call.)</p>
-    </div>
-
-    <!-- Zcal Booking Section -->
-    <div class="booking-container">
-        <iframe src="https://zcal.co/i/Sz2ZoOF3?embed=1&embedType=iframe" loading="lazy" id="zcal-invite"></iframe>
-    </div>
-
 </body>
 
 </html>
