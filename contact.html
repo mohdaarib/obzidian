@@ -17,8 +17,6 @@
             margin: 0;
             padding: 0;
             font-family: Inter, sans-serif;
-            background-image: url(./images/header\ background\ image.png);
-            background-size: contain;
         }
 
         .overlay-fade-bottom-2 {
@@ -31,6 +29,7 @@
             color: #ffffff;
             position: relative;
             align-items: center;
+            background-size: contain;
         }
 
         .call_book_content {
@@ -41,22 +40,35 @@
         }
 
         .call_book_content h2 {
+            letter-spacing: 1px;
+            font-family: Inter, sans-serif;
+            font-size: 22px;
+            font-weight: bold;
+            background: linear-gradient(0deg, rgba(90, 12, 3, 1) 0%, rgba(255, 72, 0, 1) 100%);
+            -webkit-background-clip: text;
+            /* Chrome, Safari */
+            background-clip: text;
+            /* For Firefox */
+            color: transparent;
             text-align: center;
-            font-size: 2rem;
-            margin: 0;
-            color: #ffffff;
-            margin-top: 4%;
         }
 
         .call_book_content h3 {
+            font-family: Oswald, sans-serif;
             text-align: center;
             font-size: 1.8rem;
             color: #ffffffec;
         }
 
         .call_book_content p {
-            font-size: 1.4rem;
-            color: #ffffffec;
+            z-index: 12;
+            color: #ffffff;
+            text-align: center;
+            font-family: Inter, sans-serif;
+            font-size: 1.3rem;
+            line-height: 1.6;
+            position: relative;
+            font-weight: 400;
         }
 
         /* Zcal Booking Container */
@@ -76,6 +88,9 @@
 
         /* Responsive Styles */
         @media (max-width: 991px) {
+            .hero_section_cpage {
+                background-size: contain;
+            }
 
             #zcal-invite {
                 height: 130vh;
@@ -95,6 +110,9 @@
         }
 
         @media (max-width: 768px) {
+            .hero_section_cpage {
+                background-size: contain;
+            }
 
             #zcal-invite {
                 height: 120vh;
@@ -114,6 +132,10 @@
         }
 
         @media (max-width: 479px) {
+            .hero_section_cpage {
+                background-size: contain;
+            }
+
             #zcal-invite {
                 height: 120vh;
             }
