@@ -8,6 +8,11 @@ html {
 body {
   margin: 0;
   margin-bottom: auto;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
 }
 
 

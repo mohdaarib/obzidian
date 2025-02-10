@@ -101,3 +101,47 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+
+//---------------Security Code for dont do right Click and Get Source Code ---------------//
+
+document.addEventListener("contextmenu", (event) => event.preventDefault());
+
+document.addEventListener("contextmenu", (event) => event.preventDefault());
+
+document.addEventListener("keydown", (event) => {
+    if (event.ctrlKey && (event.key.toLowerCase() === "u")) {
+        event.preventDefault();
+        alert("View Source is disabled!");
+    }
+    if (
+        event.key === "F12" || 
+        (event.ctrlKey && event.shiftKey && 
+            (event.key === "I" || event.key === "J" || event.key === "C"))
+    ) {
+        event.preventDefault();
+        alert("Developer tools are disabled!");
+    }
+    if (event.metaKey && event.altKey && event.key === "I") {
+        event.preventDefault();
+        alert("Developer tools are disabled!");
+    }
+});
+
+
+setInterval(() => {
+  console.profile();
+  console.profileEnd();
+  if (console.clear) console.clear();
+  if (window.console && console.profiles && console.profiles.length > 0) {
+      document.body.innerHTML = "";
+  }
+}, 1000);
+
+
+
+document.addEventListener("dragstart", (event) => event.preventDefault());
+document.addEventListener("mousedown", (event) => {
+    if (event.button === 2) event.preventDefault(); // Right-click
+});
+
