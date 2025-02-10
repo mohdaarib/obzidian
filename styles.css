@@ -578,22 +578,22 @@ body {
 
 .footer .footer-links p {
   font-family: 'Inter', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #fff;
-  text-decoration: none;
-  font-weight: 500;
+  font-weight: 700;
   margin: 0 10px;
 }
 
 .footer .social-icons {
   margin-top: 15px;
+  margin-bottom: 10px;
 }
 
 /* Combined social icons styles */
 .footer .social-icons a {
   color: #fff;
   /* Default icon color */
-  font-size: 24px;
+  font-size: 30px;
   display: inline-block;
   margin: 0 10px;
   transition: all 0.3s ease;
@@ -608,6 +608,14 @@ body {
   /* For Safari/Chrome */
   background-clip: text;
   /* Standard property */
+}
+
+.footer .f_footer {
+  font-family: 'Inter', sans-serif;
+  font-size: .9rem;
+  color: #fff;
+  font-weight: 300;
+  padding-top: 15px;
 }
 
 
@@ -758,8 +766,8 @@ body {
   }
 
   .footer .social-icons a {
-    font-size: 22px;
-    margin: 0 8px;
+    font-size: 30px;
+    margin: 8px;
   }
 }
 
@@ -909,8 +917,8 @@ body {
   }
 
   .footer .social-icons a {
-    font-size: 20px;
-    margin: 0 6px;
+    font-size: 30px;
+    margin: 6px;
   }
 }
 
@@ -1062,8 +1070,8 @@ body {
   }
 
   .footer .social-icons a {
-    font-size: 18px;
-    margin: 0 5px;
+    font-size: 30px;
+    margin: 5px;
   }
 }
 
